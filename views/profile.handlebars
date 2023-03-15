@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/profile.css">
+  </head>
+
+
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+  <a class="navbar-brand" href="/">Finsta</a>
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="#" id="post-button">New Post</a>
+    </li>
+  </ul>
+  <form class="form-inline my-2 my-md-0 mr-3">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search for Topics or Questions" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="#">{{name}}</a>
+    </li>
+  </ul>
+</nav>
+
+
+<div id="posts-container">
+    <div class="form-container">
+  <form class="new-post-form" style="display: none;">
+    <h2>New Post</h2>
+    <div>
+      <label for="post-name">Title:</label>
+      <input type="text" id="post-name" name="post-name">
+    </div>
+    <div>
+      <label for="post-content">Content:</label>
+      <textarea id="post-content" name="post-content"></textarea>
+    </div>
+    <button type="submit">Create Post</button>
+  </form>
+  </div>
+  <hr>
+  <h2>Posts</h2>
+  <div class="post-list">
+    <!-- Your posts go here -->
+  </div>
+</div>
+
+<script src="./js/profile.js"></script>
